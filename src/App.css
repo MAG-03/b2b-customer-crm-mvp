@@ -1,5 +1,10 @@
+/* ===================== */
+/* Standard React-stil   */
+/* ===================== */
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -36,3 +41,70 @@
     transform: rotate(360deg);
   }
 }
+
+/* ===================== */
+/* CRM App Styling       */
+/* ===================== */
+
+/* Login og Dashboard containere */
+.login-container, .dashboard-container {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+/* Input felter */
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Knapper */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0033aa;
+}
+
+/* CustomerCard styling */
+.customer-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fafafa;
+  transition: transform 0.2s;
+}
+
+.customer-card:hover {
+  transform: scale(1.02);
+}
+
+/* Status farge */
+.customer-card span {
+  font-weight: bold;
+}
+
+/* Søkefelt i Dashboard */
+.dashboard-container input[type="text"] {
+  margin-bottom: 15px;
+}
+

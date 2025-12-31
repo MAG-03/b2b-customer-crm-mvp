@@ -1,16 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Login from './Components/Login';
+import Dashboard from './Components/Dashboard';
 import './App.css';
 
+
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <div>
-      <h1>B2B Customer CRM</h1>
-      <p>My first startup MVP</p>
+      {loggedIn ? (
+        <Dashboard />
+      ) : (
+        <Login onLogin={() => setLoggedIn(true)} />
+      )}
     </div>
   );
 }
 
 export default App;
+
+
 
 
 
